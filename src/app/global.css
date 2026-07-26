@@ -1,1 +1,66 @@
 @import "tailwindcss";
+
+
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-border: var(--border);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --color-accent-amber: var(--accent-amber);
+  --color-accent-amber-hover: var(--accent-amber-hover);
+  --color-accent-purple: var(--accent-purple);
+  --color-accent-purple-hover: var(--accent-purple-hover);
+  --color-success: var(--success);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-playfair);
+}
+
+:root {
+  /* Base surfaces */
+  --background: #0f0d0b;
+  --surface: #171310;
+  --surface-raised: #201a15;
+  --border: #2c231a;
+
+  /* Text */
+  --text-primary: #f5efe6;
+  --text-secondary: #c9beb0;
+  --text-muted: #8b8378;
+
+  /* Accents */
+  --accent-amber: #d98c4a;
+  --accent-amber-hover: #e6a366;
+  --accent-purple: #b79adc;
+  --accent-purple-hover: #c7b0e8;
+  --success: #9dbe87;
+
+  /* Radius */
+  --radius-card: 14px;
+  --radius-button: 30px;
+
+  /* Shadows (depth for floating cards) */
+  --shadow-float-sm: 0 20px 40px rgba(0, 0, 0, 0.4);
+  --shadow-float-lg: 0 30px 60px rgba(0, 0, 0, 0.55);
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

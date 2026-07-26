@@ -1,9 +1,18 @@
+import { Hero } from "../components/storefront/hero";
+import { CategorySection } from "../components/storefront/category-section";
+import { FeaturedSection } from "../components/storefront/featured-section";
+import { PromoSection } from "../components/storefront/promo-section";
+import { BrandStory } from "../components/storefront/brand-story";
+
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <p className="text-neutral-500">
-        Foundation ready. Homepage UI comes in Phase 2.
-      </p>
+    <main>
+      <Hero />
+      <CategorySection/>
+      <FeaturedSection/>
+      <PromoSection/>
+      <BrandStory/>
+
     </main>
   );
 }
